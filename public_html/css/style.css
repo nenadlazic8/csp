@@ -15,6 +15,7 @@ and open the template in the editor.
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -63,22 +64,22 @@ header .container .logoDiv img{
 
 /*NAVIGATION US STYLE*/
 
-.navigation{
+nav{
     margin: auto 0;
 }
 
-.navigation ul li{
+nav ul li{
     display: inline-block;
     list-style: none;
     margin-left: 20px;
 }
 
-.navigation ul li a{
+ .nav-item a{
     text-decoration: none;
     color: #FFFBEF;
     text-transform: uppercase;
 }
-.navigation ul li a:before{
+.nav-item a:before{
     content: '';
     height: 5px;
     width: 0%;
@@ -88,15 +89,23 @@ header .container .logoDiv img{
     margin-bottom: 4px;
 }
 
-.navigation ul li .contact:before{
+.nav-item .contact:before{
     display: none;
 }
 
 .dark-header{
-    background-color: black;
+    background-color: #00272B;
+    z-index: 1;
+    transition: linear 1s;
+    
 }
 
-.navigation ul li a:hover:before{
+header{
+    position: fixed;
+    border-bottom: 1px solid rgba(0, 173, 78, 0.199);
+}
+
+.nav-item a:hover:before{
 
     width: 97%;
 
@@ -121,6 +130,9 @@ header .container .logoDiv img{
     top: 0;
     bottom: 0;
 }
+
+
+
 
 /*SUB-HEADING US STYLE*/
 
@@ -369,6 +381,8 @@ iframe{
     margin: -15px auto 65px auto;
 }
 
+
+
 .petrol-location-item h3{
     text-align: center;
     border-bottom: 1px solid gray;
@@ -530,6 +544,10 @@ iframe{
     line-height: 30px;
 }
 
+.restaurant-desc .heading-border{
+    margin: 0 auto 60px auto;
+}
+
 /*CONTACT*/
 
 .contact-us{
@@ -620,6 +638,15 @@ footer a{
         width: 200px;
     }
 
+    .navbar-light .navbar-toggler {
+        color: white;
+        border-color: transparent;
+        background-color: #00732e77;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -653,12 +680,39 @@ footer a{
         height: 150px;
         width: 150px;
     }
+    .navbar-nav .contact {
+        padding: 0;
+        border-radius: 0;
+        background-color:transparent;
+        transition: linear 0.5s;
+        padding-top: 2px;
+    }
 
 }
 
 @media screen and (max-width: 485px) {
     .flex{
         display: block;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        padding: 15px 0;
+    }
+
+    .navbar-nav {
+        align-items: flex-end;
+    }
+
+    .navbar-nav .contact {
+        padding: 0;
+        border-radius: 0;
+        background-color:transparent;
+        transition: linear 0.5s;
+        padding-top: 2px;
     }
 
     .build img{
@@ -711,7 +765,7 @@ footer a{
     .petrol img {
         position: absolute;
         right: 0;
-        top: 40%;
+        top: -2%;
         width: 50%;
         opacity: 0.2;
     }
@@ -745,6 +799,28 @@ footer a{
 
     h2{
         font-size: 4rem;
+    }
+
+    .nav-item a:before {
+        content: '';
+        height: 1px;
+        width: 0%;
+        background-color: green;
+        display: block;
+        transition: linear 1s;
+        margin-bottom: 4px;
+    }
+
+    .contact-us{
+        display: block;
+    }
+
+    .contact-us .contact-map {
+        width: 100%;
+    }
+
+    .contact-content{
+        width: 100%;
     }
 }
 
