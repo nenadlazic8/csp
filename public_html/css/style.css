@@ -1,0 +1,576 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 2, 2019, 11:48:22 AM
+    Author     : Nenad Lazic
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.green{
+    color: #22912A;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*HEADER US STYLE*/
+
+header{
+    border-bottom: 1px solid #FFFBEF;
+    position: absolute;
+    width: 100%;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;   
+}
+
+header .container .logoDiv img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/*NAVIGATION US STYLE*/
+
+.navigation{
+    margin: auto 0;
+}
+
+.navigation ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #FFFBEF;
+    text-transform: uppercase;
+}
+.contact{
+    padding: 13px 20px;
+    border-radius: 35px;
+    background-color: #22912A;
+}
+
+.contact:hover{
+    background-color: #00272B;
+    color: #FFFBEF;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+}
+
+/*SUB-HEADING US STYLE*/
+
+.sub-heading-content {
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    color: #FFFBEF;
+    left: 25%;
+    text-align: center;
+    max-width: 50%;
+
+}
+
+.sub-heading{
+    background:linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.4)100%),url("../images/car-filling-station-fuel-pump-9796.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 800px;
+    margin-bottom: 100px;
+}
+
+.sub-heading-content p{
+    margin-bottom: 6%;
+    line-height: 23px;
+}
+
+.sub-heading-content a{
+    text-decoration: none;
+    color: #FFFBEF;
+}
+
+.sub-heading-content h1{
+    font-size: 4.5em;
+}
+
+/*WHY US STYLE*/
+
+.why-us .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-us .container article{
+    min-height: 800px;
+    max-width: 40%;
+    width: 100%;
+    background:linear-gradient( rgba(0, 173, 77, 0.7) 100%, rgba(0, 0, 0, 0.4)100%),url("../images/close-up-petrol-pump-nozzles-gas-station_23-2147841906.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #FFFBEF;
+}
+
+.article-content{
+    text-align: center;
+    top: 48%;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.article-content h2 {
+    font-size: 6em;   
+    margin: 0;
+}
+
+.why-us .container aside {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    line-height: 30px;
+    margin-left: 10%;
+    max-width: 60%;
+    width: 100%;
+    padding: 50px 0;
+}
+
+.why-us .container aside h1{
+    font-size: 6rem;
+    margin: 0;
+    line-height: 55px;
+    margin-bottom: 35px;
+}
+
+/*SERVICES*/
+
+.services {
+    min-height: 1000px;
+    background-color: #00272B;
+    margin-top: -50px;
+    z-index: -1;
+    color: #FFFBEF;
+    margin-bottom: 90px;
+}
+
+.services .container{
+    padding-top: 6%;
+    text-align: center;
+}
+
+.heading-border {
+    border-top: 2px solid green;
+    max-width: 10%;
+    margin: auto;
+}
+
+.services-heading{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 3%;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    font-size: 7rem;
+    color: #22912A;
+    text-decoration: none;  
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.fa, .fas:hover {
+    font-weight: 900;
+    font-size: 7rem;
+    color: #22912A;
+    text-decoration: none;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.services-article {
+    margin: 25px;
+    box-shadow: 1px 1px 24px 1px rgba(0, 0, 0, 0.5);
+    padding: 35px;
+}
+
+.services-article p{
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.services-article .contact{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFBEF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid #22912A;
+}
+
+.services-article a .contact:hover{
+    background-color: #00272B;
+    color: #FFFBEF;
+}
+
+.services-article h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*PETROL*/
+
+.petrol{
+    position: relative;
+    min-height: 600px;
+    margin-bottom: 150px;
+}
+
+.petrol img{
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 50%;
+
+}
+
+.petrol-desc{
+    max-width: 45%;
+}
+
+.petrol h1{
+    font-size: 6rem;
+}
+
+.petrol p {
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.petrol-desc {
+    max-width: 45%;
+    padding: 20px 0px 20px 45px;
+    font-size: 1.8rem;
+}
+
+.petrol-icons-item{
+    display: inline-block;
+    margin-right: 10%;
+}
+
+.petrol-icons-item p{
+    margin: 0;
+    padding: 5px;
+}
+
+.petrol-icons-item .fas{
+    padding: 10px 25px 0px 10px;
+    color: #00732e;
+}
+
+.petrol-icons-item .fas:hover{
+    color: #22912A;
+}
+
+.petrol-location-item {
+    max-width: 30%;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0px 0px 9px gray;
+    margin-right: 4%;
+    margin-bottom: 50px;
+}
+
+.petrol-location-item:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+iframe{
+    max-width: 100%;
+}
+
+.petrol-location{
+    margin-bottom: 100px;
+}
+
+.petrol-location .heading{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.heading-border {
+    border-top: 7px solid 
+        green;
+    max-width: 10%;
+    margin: -15px auto 65px auto;
+}
+
+.petrol-location-item h3{
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-bottom: 20px;
+    font-size: 3rem;
+}
+
+.petrol-location-item p{
+    padding-left: 20px;
+}
+
+.location-flex-2{
+    display: flex;
+    justify-content: space-around;
+}
+
+/*BUILDING*/
+
+.building{
+    margin: 0;
+}
+
+.building-desc{
+    text-align: center;
+}
+
+.building-desc h2{
+    font-size: 5rem;
+    text-align: center;   
+    margin: 0 0 5rem 0;
+}
+
+.building-desc p{
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.building-desc .contact{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 2.5rem;
+}
+
+.building {
+    background: #00272B;
+    min-height: 590px;
+}
+
+.container.container-build {
+    padding-bottom: 2rem;
+}
+
+.skew-1 {
+    border-radius: 0 0 50% 50%;
+    background: white;
+    min-height: 450px;
+    padding-bottom: 20rem;
+}
+
+.build{
+    display: flex;
+    justify-content: space-between;
+}
+
+.build img{
+    height: 242px;
+    width: 260px;
+}
+
+.building-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.building-gallery img{
+    display: block;
+    height: 100%;
+}
+
+.building-gallery a {
+    flex: 0 0 33%;
+    height: 250px;
+    margin-bottom: 1rem;
+}
+
+.building h1{
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+    font-size: 5rem;
+}
+
+.build{
+    margin: -15rem 0 15rem 0;
+}
+
+/*RESTAURANT*/
+
+.restaurant{
+    position: relative;
+    margin-top: -15px;
+    margin-bottom: 89px;
+    padding-bottom: 9rem;
+}
+.restaurant .food-bg{
+    background: url(../images/foodbg.jpg);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.03;
+}
+
+.restaurant-desc{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.restaurant-desc h2{
+    font-size: 5rem;
+    text-align: center;   
+}
+
+.restaurant-desc p{
+    max-width: 50%;
+    margin: auto;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.restaurant-desc .contact{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin-top: 2.5rem;
+}
+
+.restaurant .container{
+    padding-top: 70px;
+}
+
+.restaurant-desc .contact {
+    display: inline-block;
+    text-decoration: none;
+    color: 
+        white;
+    margin-top: 2.5rem;
+}
+
+/*CONTACT*/
+
+.contact-us{
+    display: flex;
+    margin-top: -9rem;
+}
+
+.contact article{
+    flex: 0 0 50%;
+    width: 50%;
+}
+
+.contact-us .contact-map{
+    width: 50%;
+}
+
+.contact-us .contact-map iframe{
+    width: 100%;
+}
+
+.contact-content{
+    width: 50%;
+    text-align: center;
+    background: linear-gradient(184deg, rgba(0,40,44,1) 0%, rgba(0,39,43,1) 0%, rgba(4,83,91,1) 100%);
+    color: white;
+    font-size: 1.7rem;
+    padding: 40px;
+}
+
+.contact-content a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact-content img{
+    width: 150px;
+}
+
+.contact-content .fab{
+    font-size: 6.5rem;
+}
+
+.contact-content .social{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.fa-facebook-square{
+    margin-right: 10%;
+}
+
+/*FOOTER*/
+
+footer * {
+    margin: 0;
+}
+
+footer {
+    background: #00272B;
+    text-align: center;
+    padding: 40px;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+    color: green;
+}
+
+.footer p{
+    line-height: 25px;
+}
