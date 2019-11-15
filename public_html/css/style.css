@@ -93,15 +93,10 @@ nav ul li{
     display: none;
 }
 
-.dark-header{
-    background-color: #00272B;
-    z-index: 1;
-    transition: linear 1s;
-    
-}
+
 
 header{
-    position: fixed;
+    
     border-bottom: 1px solid rgba(0, 173, 78, 0.199);
 }
 
@@ -776,8 +771,8 @@ footer a{
 
     .petrol-icons {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
     }
 
     .petrol-icons-item {
@@ -790,6 +785,10 @@ footer a{
         flex: 0 0 49%;
         height: 180px;
         margin-bottom: 1rem;
+    }
+
+    .services .container{
+        padding: 20px 0;
     }
 
     .building-desc p,
@@ -821,6 +820,11 @@ footer a{
 
     .contact-content{
         width: 100%;
+    }
+
+    .sub-heading{
+        background-attachment: unset;
+        background-position: center;
     }
 }
 
