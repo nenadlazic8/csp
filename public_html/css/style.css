@@ -381,7 +381,7 @@ iframe{
 .petrol-location-item h3{
     text-align: center;
     border-bottom: 1px solid gray;
-    padding-bottom: 20px;
+    padding: 20px;
     font-size: 3rem;
 }
 
@@ -459,6 +459,7 @@ iframe{
 .building-gallery img{
     display: block;
     height: 100%;
+    width: 100%;
 }
 
 .building-gallery a {
@@ -476,6 +477,11 @@ iframe{
 
 .build{
     margin: -15rem 0 15rem 0;
+}
+
+.building-news-wrapper{
+    display: flex;
+    justify-content: space-around;
 }
 
 /*RESTAURANT*/
@@ -615,6 +621,17 @@ footer a{
 
 .footer p{
     line-height: 25px;
+}
+
+#toTop {
+    font-size: 3.5rem;
+    display: inline-block;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    right: 0;
+    color: #037d05ad;
+
 }
 
 /*RESPONSIVE*/
@@ -771,7 +788,7 @@ footer a{
 
     .petrol-icons {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         
     }
 
@@ -825,6 +842,14 @@ footer a{
     .sub-heading{
         background-attachment: unset;
         background-position: center;
+    }
+    
+    .skew-1{
+        border-radius: 0 0 20% 20%;
+    }
+    
+    .build{
+        margin: -18rem 0 15rem 0;
     }
 }
 
