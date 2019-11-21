@@ -60,6 +60,7 @@ header .container {
 header .container .logoDiv img{
     max-width: 150px;
     max-height: 150px;
+    padding: 10px;
 }
 
 /*NAVIGATION US STYLE*/
@@ -83,7 +84,7 @@ nav ul li{
     content: '';
     height: 5px;
     width: 0%;
-    background-color: green;
+    background-color: transparent;
     display: block;
     transition: linear 1s;
     margin-bottom: 4px;
@@ -101,7 +102,7 @@ header{
 }
 
 .nav-item a:hover:before{
-
+    background-color: green;
     width: 97%;
 
 }
@@ -293,7 +294,7 @@ header{
 .petrol{
     position: relative;
     min-height: 600px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .petrol img{
