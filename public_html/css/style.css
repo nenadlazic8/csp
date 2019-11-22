@@ -493,6 +493,43 @@ iframe{
     max-width: 63%;
 }
 
+.building ul{
+    padding: 8px 0;
+    list-style-type: none;
+}
+
+.building ul a{
+    text-decoration: none;
+    color:#6cabd0b8
+}
+
+.building ul a:hover{
+    text-decoration: none;
+    color:#5eaddc;
+}
+
+.building-plan h2{
+    padding: 15px 0;
+    color: white;
+}
+
+.building-plan .fa-arrow-down{
+    animation-name: slidedown;
+    font-size: 2rem;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  padding: 0;
+  color: #5eaddc;
+}
+
+@keyframes slidedown{
+        0%   {transform:translateY(0);}
+  25%  {transform:translateY(10px);}
+  50%  {transform:translateY(0);}
+  77%  {transform:translateY(-10px);}
+  100% {transform:translateY(0);}
+}
+
 /*RESTAURANT*/
 
 .restaurant{
@@ -911,6 +948,9 @@ footer a{
     }
     .building-news-item {
         max-width: 90%;
+    }
+    .building-plan h2 {
+        font-size: 2rem;
     }
 }
 
