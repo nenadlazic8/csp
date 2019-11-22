@@ -909,6 +909,9 @@ footer a{
         margin: 0.67em 0;
         padding: 20px;
     }
+    .building-news-item {
+        max-width: 90%;
+    }
 }
 
 @media screen and (max-width: 355px){
