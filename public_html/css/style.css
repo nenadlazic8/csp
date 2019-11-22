@@ -28,6 +28,10 @@ img{
     max-height: 100%;
 }
 
+a{
+    text-decoration: none;
+}
+
 .container{
     max-width: 1200px;
     margin: auto;
@@ -300,8 +304,9 @@ header{
 .petrol img{
     position: absolute;
     right: 0;
-    top: 30%;
+    top: 10%;
     width: 50%;
+    z-index: -1;
 
 }
 
@@ -484,6 +489,9 @@ iframe{
     display: flex;
     justify-content: space-around;
 }
+.building-news-item {
+    max-width: 63%;
+}
 
 /*RESTAURANT*/
 
@@ -555,6 +563,8 @@ iframe{
 .contact-us{
     display: flex;
     margin-top: -9rem;
+    background-image: linear-gradient(184deg, rgba(0,40,44,1) 0%, rgba(0,39,43,1) 0%, rgba(4,83,91,1) 100%);
+    color: white;
 }
 
 .contact article{
@@ -564,16 +574,46 @@ iframe{
 
 .contact-us .contact-map{
     width: 50%;
+text-align: center;
+}
+.form-element{
+    margin-bottom: 12px;
 }
 
-.contact-us .contact-map iframe{
-    width: 100%;
+.form-element input{
+    line-height: 3rem;
+    width: 50%;
+    padding-left: 10px;
+    border: 0.4px solid #8080807a;
+    background-color: #00000014;
+    color: white;
+}
+textarea{
+    line-height: 2rem;
+    width: 50%;
+    padding-left: 10px;
+    border: 0.4px solid #8080807a;
+    background-color: #00000014;
+    color: white;
+}
+
+input[type="submit"] {
+    width: 15%;
+    background: #0080007d;
+    border: 0px solid;
+    transition: 0.5s linear;
+}
+
+input[type="submit"]:hover {
+    width: 15%;
+    background: green;
+    border: 0px solid;
 }
 
 .contact-content{
     width: 50%;
     text-align: center;
-    background: linear-gradient(184deg, rgba(0,40,44,1) 0%, rgba(0,39,43,1) 0%, rgba(4,83,91,1) 100%);
+    
     color: white;
     font-size: 1.7rem;
     padding: 40px;
@@ -592,6 +632,11 @@ iframe{
     font-size: 6.5rem;
 }
 
+.contact-content .fab:hover{
+    font-size: 6.5rem;
+    color: #ffffff99;
+}
+
 .contact-content .social{
     display: flex;
     justify-content: center;
@@ -600,6 +645,11 @@ iframe{
 
 .fa-facebook-square{
     margin-right: 10%;
+}
+
+.fa-facebook-square:hover{
+    margin-right: 10%;
+    
 }
 
 /*FOOTER*/
@@ -672,6 +722,7 @@ footer a{
         top: 35%;
         left: 35%;
         position: absolute;
+        transform: translateX(-10%);
     }
 
     .sub-heading-content p {
@@ -851,6 +902,12 @@ footer a{
     
     .build{
         margin: -18rem 0 15rem 0;
+    }
+
+    .contact-us h1 {
+        font-size: 2em;
+        margin: 0.67em 0;
+        padding: 20px;
     }
 }
 
