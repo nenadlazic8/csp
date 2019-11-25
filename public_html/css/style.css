@@ -62,7 +62,7 @@ header .container {
 }
 
 header .container .logoDiv img{
-    max-width: 150px;
+    max-width: 200px;
     max-height: 150px;
     padding: 10px;
 }
@@ -398,6 +398,33 @@ iframe{
 .location-flex-2{
     display: flex;
     justify-content: space-around;
+}
+
+
+.discount-desc{
+    text-align: center;
+}
+
+.discount-desc h2{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+
+.discount-desc p{
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+.discount-img img{
+    border-radius: 50px;
+    max-height: 310px;
+}
+
+section.discount-s.container {
+    margin-bottom: 200px;
+    margin-top: 95px;
+    max-width: 40%;
+    text-align: center;
 }
 
 /*BUILDING*/
@@ -900,6 +927,7 @@ footer a{
     .building-desc p,
     .restaurant-desc p{
         line-height: 20px;
+        max-width: 75%;
     }
 
     h2{
@@ -951,6 +979,17 @@ footer a{
     }
     .building-plan h2 {
         font-size: 2rem;
+    }
+
+    section.discount-s.container {
+        margin-bottom: 120px;
+        margin-top: 95px;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .discount-img img{
+        max-width: 75%;
     }
 }
 
