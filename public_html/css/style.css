@@ -991,6 +991,10 @@ footer a{
     .discount-img img{
         max-width: 75%;
     }
+    .discount-img img {
+        border-radius: 18px;
+        max-height: 310px;
+    }
 }
 
 @media screen and (max-width: 355px){
