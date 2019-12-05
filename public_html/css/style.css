@@ -234,7 +234,8 @@ header{
 
 .sub-heading-content p{
     margin-bottom: 6%;
-    line-height: 23px;
+    line-height: 30px;
+    font-size: 1.8rem;
 }
 
 .sub-heading-content a{
@@ -933,7 +934,7 @@ footer a{
     }
 
     .sub-heading-content h1 {
-        font-size: 3.5em;
+            font-size: 4.5em;
     }
 
     .why-us{
