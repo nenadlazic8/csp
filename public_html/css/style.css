@@ -8,6 +8,7 @@ and open the template in the editor.
     Author     : Nenad Lazic
 */
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
 
 *{
     box-sizing: border-box;
@@ -243,6 +244,8 @@ header{
 
 .sub-heading-content h1{
     font-size: 4.5em;
+    font-family: 'Courgette', cursive;
+   
 }
 
 /*WHY US STYLE*/
