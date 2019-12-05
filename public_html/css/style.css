@@ -68,6 +68,50 @@ header .container .logoDiv img{
     padding: 10px;
 }
 
+.header-info {
+    background-color:#00272B;
+    text-align: right;
+}
+
+.header-info-phones{
+    display: flex
+}
+
+#headerMail{
+    padding: 0;
+}
+
+.header-info a{
+    text-decoration: none;
+    color: white;
+}
+
+.info-phones-item .fab, .info-phones-item .fas{
+    font-size: 2.5rem;
+    padding: 10px;
+    margin: 0;
+}
+
+.header-info-numbers {
+    display: inline-block;
+    padding: 8px 20px;
+}
+
+.info-phones-item{
+    margin-left: 15px;
+}
+
+#headerMail, #headerWa, #headerViber{
+    color: green;
+    padding: 5px 10px;
+}
+
+#headerMail:hover, #headerWa:hover, #headerViber:hover{
+    color: rgb(38, 206, 38);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
 /*NAVIGATION US STYLE*/
 
 nav{
@@ -234,8 +278,7 @@ header{
 
 .sub-heading-content p{
     margin-bottom: 6%;
-    line-height: 30px;
-    font-size: 1.8rem;
+    line-height: 23px;
 }
 
 .sub-heading-content a{
@@ -928,13 +971,17 @@ footer a{
     .sub-heading-content {
         left: 0;
         max-width: 100%;
-        padding: 35px;
+        padding: 145px 45px;
         margin: 0;
+    }
 
+    .header-info {
+        background-color: #00272B;
+        text-align: center;
     }
 
     .sub-heading-content h1 {
-            font-size: 4.5em;
+        font-size: 3.5em;
     }
 
     .why-us{
